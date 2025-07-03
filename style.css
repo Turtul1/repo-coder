@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+.imagen-compu{
+    position: relative;
+    right: 10px;
+}
+
+/* ======= Main ======= */
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* ======= Navbar ======= */
+header {
+    position: absolute;
+    top: 5vh;
+    left: 4vh;
+    width: calc(100% - 80px);
+    z-index: 10;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4vh;
+    
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 4vh;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+    right: 50px;
+    
+}
+
+.nav-link::after {              /* Pseudo-elemento que va "después" del texto */
+    content: '';                /* No tiene contenido, solo es una línea */
+    display: block;             /* Se comporta como un bloque (para poder dar ancho/alto) */
+    width: 0%;                  /* Empieza invisible (sin ancho) */
+    height: 1px;                /* Altura finita, como una línea */
+    background: black;          /* Color negro */
+    transition: 0.3s;           /* Suaviza el cambio de ancho */
+    margin-top: 4px;            /* Espacio entre el texto y la línea */
+    
+}
+.nav-link:hover::after {
+    width: 100%; /* Se expande al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+/* === Sección Izquierda: Texto === */
+.main-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    gap: 20px;
+}
+.main-section h4 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.main-section h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+}
+.second-main-section p {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* === Sección Derecha: Imagen === */
+.imagen-compu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.imagen-compu img {
+    max-width: 100%;
+    height: auto;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    padding: 200px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    
+}
+
+
+
+
+
+
+/* Footer opcional */
+footer {
+    position: absolute;
+    top: 95vh;
+    left: 40px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}

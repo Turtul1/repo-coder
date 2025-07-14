@@ -7,36 +7,43 @@
         <link rel="stylesheet" href="../style.css">
         <title>Sobre mi</title>
     </head>
-    <body>
+
+    <body class="body">
+
     <header>
-            <nav class="navbar">
-                <img class="fotoheader" src="C:\Users\Rodrigo\Documents\documentos importantes\Pagina\Assets\imagenes actividad 1\fondos\portfolio.png" alt="">
-                <ul>
+        <nav class="navbar navbar-expand-md bg-light fixed-top px-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto">
                     <li class="li-nav"><a class="nav-link" href="contact.html">Contacto</a></li>
                     <li class="li-nav"><a class="nav-link" href="about.html">About me</a></li>
                     <li class="li-nav"><a class="nav-link" href="skills.html">Skills</a></li>
                     <li class="li-nav"><a class="nav-link" href="projects.html">Proyectos</a></li>
                     <li class="li-nav"><a class="nav-link" href="../index.html">Home</a></li>
                 </ul>
-            </nav>
-        </header>
-    <main>
-        <div class="overlay">
-            <section class="main-section">
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5 pt-5">
         <h1>Sobre Mi</h1>
-        <h4>Un poco sobre mi</h4>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start">
+                <h4>Un poco sobre mi</h4>
+                    <br>
+                <p> Soy Rodrigo Hassan, tengo 24 años y actualmente trabajo en el área de monitoreo de sistemas para una empresa que brinda soporte al sector tecnológico de un banco. Estoy en formación como desarrollador, cursando los Fundamentos de la Programación, con el objetivo de especializarme en desarrollo de software. Me interesan la automatización, la eficiencia en los procesos y construir soluciones que realmente funcionen. También soy papá, así que sé lo que es organizar el tiempo y meterle compromiso a todo lo que hago.</p>
         
-        <p> Soy Rodrigo Hassan, tengo 24 años y actualmente trabajo en el área de monitoreo de sistemas para una empresa que brinda soporte al sector tecnológico de un banco. Estoy en formación como desarrollador, cursando los Fundamentos de la Programación, con el objetivo de especializarme en desarrollo de software. Me interesan la automatización, la eficiencia en los procesos y construir soluciones que realmente funcionen. También soy papá, así que sé lo que es organizar el tiempo y meterle compromiso a todo lo que hago.</p>
-        
-            </section>
+            </div>
         </div>
         
         
     </main>   
-        <footer>
-            <div>
-                <p> &copy; Comisión 73350 - Todos los derechos reservados</p>
-            </div>
-        </footer>
+    
+    <footer class="text-start ps-4 mt-5 mb-3">
+        <p>&copy; Comisión 73350 - Todos los derechos reservados</p>
+    </footer>
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

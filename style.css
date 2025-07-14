@@ -9,12 +9,6 @@
 
 body {
     font-family: "Merriweather", serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 section{
     display: flex;
@@ -61,20 +55,17 @@ header {
     color: black;
     font-weight: 300;
     font-size: 14px;
-    position: relative;
-    right: 50px;
-    
+    position: relative;    
 }
 
-.nav-link::after {              /* Pseudo-elemento que va "después" del texto */
-    content: '';                /* No tiene contenido, solo es una línea */
-    display: block;             /* Se comporta como un bloque (para poder dar ancho/alto) */
-    width: 0%;                  /* Empieza invisible (sin ancho) */
-    height: 1px;                /* Altura finita, como una línea */
-    background: black;          /* Color negro */
-    transition: 0.3s;           /* Suaviza el cambio de ancho */
-    margin-top: 4px;            /* Espacio entre el texto y la línea */
-    
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background: black;
+  transition: width 0.3s;
+  margin-top: 4px;
 }
 .nav-link:hover::after {
     width: 100%; /* Se expande al pasar el mouse */
@@ -125,29 +116,41 @@ header {
     max-width: 100%;
     height: auto;
 }
-.overlay {
-    width: 100%;
-    height: 100%;
-    padding: 200px;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    position: relative;
-    
-}
-.col{
-    background-color: aqua;
-    border: 1px solid black;
-    margin: 40px;
-    height: 500px;
-    width: 400px;
-}
-.linkedin{
-    width: 20%;
-    height: 50%;
+
+.carousel{
+    margin-left: 250px;
+    margin-bottom: 150px;
 }
 
+.carousel-img-w {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    background-color: rgba(22, 163, 22, 0.788); /* Verde claro y transparente */
+    padding: 10px;
+    border-radius: 10px;
+}
+.carousel-img-l {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
+.carousel-img-ig {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
 
+.carousel-img {
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
 
 
 

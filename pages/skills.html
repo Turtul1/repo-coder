@@ -7,47 +7,61 @@
         <link rel="stylesheet" href="../style.css">
         <title>skills</title>
     </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <img class="fotoheader" src="C:\Users\Rodrigo\Documents\documentos importantes\Pagina\Assets\imagenes actividad 1\fondos\portfolio.png" alt="">
-                <ul>
+    <body class="body">
+  <!-- Header con navbar Bootstrap -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-light fixed-top px-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto">
                     <li class="li-nav"><a class="nav-link" href="contact.html">Contacto</a></li>
                     <li class="li-nav"><a class="nav-link" href="about.html">About me</a></li>
                     <li class="li-nav"><a class="nav-link" href="skills.html">Skills</a></li>
                     <li class="li-nav"><a class="nav-link" href="projects.html">Proyectos</a></li>
                     <li class="li-nav"><a class="nav-link" href="../index.html">Home</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="overlay">
-            <section class="main-section">
-            <img src="C:\Users\Rodrigo\Documents\documentos importantes\Pagina\assets\imagenes actividad 1\fondos\portfolio.png" alt="">
-            <h1>skills</h1>
-            <p>Mis skills</p>
-            
-            
-        
-            <!-- si apretamos ctrl + k + c abre esto-->
-            <!-- Con estos simbolos se puede comentar rapido asi sin afectar la pagina-->
-            <ol>
-                <br>
-                <li>Dynatrace</li>
-                <br> 
-                <li>HTML</li>
-                <br>
-                <li>CSS</li>
-                
-            </ol>
-            </section>
-        </div>
-            
-        </main>
-        <footer>
-            <div>
-                <p> &copy; Comisión 73350 - Todos los derechos reservados</p>
             </div>
-        </footer>
+        </nav>
+    </header>
+        <main class="container" style="padding-top: 100px;">
+            <div class="row align-items-center">
+                <!-- Texto -->
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h4>Skills</h4>
+                </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../assets/images/certificaciones/bits.JPG" class="d-block carousel-img" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <img src="../assets/images/certificaciones/soporte.JPG" class="d-block carousel-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/certificaciones/Programacion.jpg" class="d-block carousel-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/certificaciones/reparacion.JPG" class="d-block carousel-img" alt="...">
+                    </div>
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            </div>
+        </main> 
+       
+    <footer class="text-start ps-4 mt-5 mb-3">
+        <p>&copy; Comisión 73350 - Todos los derechos reservados</p>
+    </footer>
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

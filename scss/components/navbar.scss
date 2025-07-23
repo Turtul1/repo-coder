@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: $spacing-md;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: $spacing-md;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: $color-black;
+    font-weight: $font-light;
+    font-size: 14px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 1px;
+      background: $color-black;
+      transition: width 0.3s;
+      margin-top: 4px;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

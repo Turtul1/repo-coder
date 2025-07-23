@@ -1,8 +1,12 @@
-@import 'variables';
-@import 'header';
-@import 'main';
+@import 'scss/abstracts/variables';
+@import 'scss/layout/main';
+@import 'scss/layout/header';
+@import 'scss/layout/carousel';
 
-$primary-color: #d3f1a2c5;
+@import 'scss/components/botones';
+@import 'scss/components/navbar.scss';
+
+$primary-color: #ffffffc5;
 
 body{
     background-color: $primary-color;
@@ -10,7 +14,3 @@ body{
 @mixin border-radius($radius){
     border-radius: $radius;
 } 
-.carousel-img-w, .carousel-img-l, .carousel-img-ig {
-    max-width: 100px;
-    margin-left: 500px;
-}

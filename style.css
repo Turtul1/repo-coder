@@ -1,3 +1,8 @@
+.carousel-img-w, .carousel-img-l, .carousel-img-ig {
+  max-width: 100px;
+  margin-left: 500px;
+}
+
 body {
   background-color: rgba(211, 241, 162, 0.7725490196);
 }

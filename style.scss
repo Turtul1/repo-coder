@@ -1,0 +1,12 @@
+$primary-color: #d3f1a2c5;
+
+body{
+    background-color: $primary-color;
+}
+@mixin border-radius($radius){
+    border-radius: $radius;
+} 
+.carousel-img-w, .carousel-img-l, .carousel-img-ig {
+    max-width: 100px;
+    margin-left: 500px;
+}

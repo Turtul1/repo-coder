@@ -64,7 +64,7 @@ header {
   margin: auto;
 }
 .carousel-img-w {
-  background-color: rgba(231, 247, 186, 0.788);
+  background-color: rgba(22, 163, 22, 0.788);
   padding: 10px;
   border-radius: 10px;
 }
@@ -107,7 +107,7 @@ header {
 }
 
 body {
-  background-color: rgba(255, 255, 255, 0.7725490196);
+  background-color: rgba(219, 241, 208, 0.7725490196);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,35 @@
+@use "../utilities/variables";
+
+.carousel {
+  margin-left: 250px;
+  margin-bottom: 150px;
+  &-img-w,
+  &-img-l,
+  &-img-ig,
+  &-img {
+    max-width: 200vh;
+    max-height: 200vh;
+    margin: auto;
+  }
+
+  &-img-w {
+    background-color: rgb(218, 207, 207);
+    &hover{
+        color: variables.$color-green;
+    }
+    padding: 10px;
+  }
+
+  &-img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  &-control-prev-icon,
+  &-control-next-icon {
+    filter: invert(1);
+  }
+}
 .carousel-img-w, .carousel-img-l, .carousel-img-ig {
     max-width: 100px;
     margin-left: 500px;
@@ -18,19 +50,16 @@ main {
 
   h4 {
     font-size: 20px;
-    font-weight: $font-light;
     letter-spacing: 2px;
   }
 
   h1 {
     font-size: 80px;
-    font-weight: $font-bold;
     line-height: 1;
   }
 
   .second-main-section p {
     font-size: 16px;
-    font-weight: $font-light;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -47,4 +76,12 @@ main {
     max-width: 100%;
     height: auto;
   }
+}
+
+header {
+  position: absolute;
+  top: 5vh;
+  left: 4vh;
+  width: calc(100% - 80px);
+  z-index: 10;
 }

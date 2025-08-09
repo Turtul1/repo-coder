@@ -1,18 +1,17 @@
+@use "../utilities/variables";
+
 .navbar {
   display: flex;
   justify-content: flex-start;
-  gap: $spacing-md;
 
   ul {
     display: flex;
     list-style: none;
-    gap: $spacing-md;
   }
 
   .nav-link {
     text-decoration: none;
-    color: $color-black;
-    font-weight: $font-light;
+    color: variables.$color-black;
     font-size: 14px;
     position: relative;
 
@@ -21,7 +20,7 @@
       display: block;
       width: 0%;
       height: 1px;
-      background: $color-black;
+      background: variables.$color-black;
       transition: width 0.3s;
       margin-top: 4px;
     }

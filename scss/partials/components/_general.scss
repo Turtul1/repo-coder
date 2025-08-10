@@ -1,39 +1,6 @@
 @use "../utilities/variables";
 
-.carousel {
-  margin-left: 250px;
-  margin-bottom: 150px;
-  &-img-w,
-  &-img-l,
-  &-img-ig,
-  &-img {
-    max-width: 200vh;
-    max-height: 200vh;
-    margin: auto;
-  }
 
-  &-img-w {
-    background-color: rgb(218, 207, 207);
-    &hover{
-        color: variables.$color-green;
-    }
-    padding: 10px;
-  }
-
-  &-img {
-    max-width: 400px;
-    max-height: 400px;
-  }
-
-  &-control-prev-icon,
-  &-control-next-icon {
-    filter: invert(1);
-  }
-}
-.carousel-img-w, .carousel-img-l, .carousel-img-ig {
-    max-width: 100px;
-    margin-left: 500px;
-}
 main {
   display: flex;
   flex-direction: row;
@@ -84,4 +51,8 @@ header {
   left: 4vh;
   width: calc(100% - 80px);
   z-index: 10;
+}
+.img-plato {
+    max-width: 500px; /* Ajusta este valor según lo necesites */
+    height: auto; /* Mantiene la proporción de la altura */
 }

@@ -1,35 +1,15 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-.carousel {
-  margin-left: 250px;
-  margin-bottom: 150px;
-}
-.carousel-img-w, .carousel-img-l, .carousel-img-ig, .carousel-img {
-  max-width: 200vh;
-  max-height: 200vh;
-  margin: auto;
-}
-.carousel-img-w {
-  background-color: rgb(218, 207, 207);
-  padding: 10px;
-}
-.carousel-img-whover {
-  color: rgba(22, 163, 22, 0.788);
-}
-.carousel-img {
-  max-width: 400px;
-  max-height: 400px;
-}
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  filter: invert(1);
-}
-
-.carousel-img-w, .carousel-img-l, .carousel-img-ig {
-  max-width: 100px;
-  margin-left: 500px;
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  background: #ffeaea;
+  padding: 10px 0;
 }
 
 main {
@@ -78,6 +58,11 @@ header {
   left: 4vh;
   width: calc(100% - 80px);
   z-index: 10;
+}
+
+.img-plato {
+  max-width: 500px; /* Ajusta este valor según lo necesites */
+  height: auto; /* Mantiene la proporción de la altura */
 }
 
 .navbar {

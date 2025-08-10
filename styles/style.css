@@ -52,6 +52,11 @@ main {
   height: auto;
 }
 
+.img-keanu {
+  max-width: 40%;
+  height: 60%;
+}
+
 header {
   position: absolute;
   top: 5vh;

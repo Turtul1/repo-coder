@@ -1,32 +1,24 @@
-@use "../utilities/variables";
+// Archivo: ./partials/components/_navbar.scss
+
+@use "../UTILITIES/variables";
+@use "../base/mixins";
 
 .navbar {
-  display: flex;
-  justify-content: flex-start;
-
-  ul {
     display: flex;
-    list-style: none;
-  }
+    justify-content: flex-start;
 
-  .nav-link {
-    text-decoration: none;
-    color: variables.$color-black;
-    font-size: 14px;
-    position: relative;
-
-    &::after {
-      content: '';
-      display: block;
-      width: 0%;
-      height: 1px;
-      background: variables.$color-black;
-      transition: width 0.3s;
-      margin-top: 4px;
+    ul {
+        display: flex;
+        list-style: none;
     }
 
-    &:hover::after {
-      width: 100%;
+    .nav-link {
+        text-decoration: none;
+        color: variables.$color-black;
+        font-size: 14px;
+        position: relative;
+        
+        // Usamos el mixin para el efecto de hover
+        @include mixins.nav-link-hover(variables.$color-black);
     }
-  }
 }

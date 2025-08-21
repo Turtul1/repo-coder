@@ -1,0 +1,13 @@
+// Archivo: ./partials/base/_extends.scss
+
+// Estilos básicos para texto en mayúsculas
+%uppercase-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+// Estilos para la base de una sección de la página
+%section-base {
+    padding: 10px 0;
+    width: 100%;
+}

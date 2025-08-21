@@ -4,12 +4,20 @@
   padding: 0;
 }
 
+.main-section h4, .second-main-section p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer {
+  padding: 10px 0;
+  width: 100%;
+}
+
 footer {
   position: static;
   bottom: 0;
-  width: 100%;
   background: #ffeaea;
-  padding: 10px 0;
 }
 
 main {
@@ -34,10 +42,9 @@ main {
   font-size: 80px;
   line-height: 1;
 }
-.main-section .second-main-section p {
+
+.second-main-section p {
   font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .imagen-compu {

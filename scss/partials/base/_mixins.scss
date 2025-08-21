@@ -1,0 +1,26 @@
+// Archivo: ./partials/base/_mixins.scss
+
+// Mixin para centrar el contenido y agregar un layout de columna
+@mixin flex-column-centered($padding) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $padding;
+}
+
+// Mixin para el efecto hover de las barras de navegación
+@mixin nav-link-hover($color) {
+    &::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1px;
+        background: $color;
+        transition: width 0.3s;
+        margin-top: 4px;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}

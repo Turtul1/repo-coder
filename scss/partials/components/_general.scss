@@ -1,35 +1,36 @@
-@use "../utilities/variables";
-
+@use "../UTILITIES/variables";
+@use "../base/mixins";
+@use "../base/extends";
 
 main {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 
 .main-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px;
-  gap: 20px;
+    flex: 1;
+    // Usamos el mixin para el layout de columna
+    @include mixins.flex-column-centered(60px); 
+    gap: 20px;
 
-  h4 {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
+    h4 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        // Extendemos el estilo de texto en mayúsculas
+        @extend %uppercase-text; 
+    }
 
-  h1 {
-    font-size: 80px;
-    line-height: 1;
-  }
+    h1 {
+        font-size: 80px;
+        line-height: 1;
+    }
+}
 
-  .second-main-section p {
+.second-main-section p {
     font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+    // Extendemos el estilo de texto en mayúsculas
+    @extend %uppercase-text;
 }
 
 .imagen-compu {

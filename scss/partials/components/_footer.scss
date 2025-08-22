@@ -3,7 +3,5 @@
 footer {
     position: static;
     bottom: 0;
-    background: #ffeaea;
-    // Extendemos el estilo base
     @extend %section-base; 
 }

@@ -2,22 +2,58 @@
 @use "../base/mixins";
 @use "../base/extends";
 
+// Estilos para el contenido principal
+main.container {
+    padding-top: 100px; 
+    padding-bottom: 50px; 
+}
+.carousel-img {
+    max-width: 100%; 
+    height: auto;
+}
+.row{
+  margin-left: 2%;  
+  max-width: 80%;
+  max-height: 70%;
+}
+.car{
+  margin-left: 20%;
+}
+
+
+// "About"
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media (min-width: 400px) {
+    .about-img {
+        margin-top: 0;
+    }
+}
+body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+}
 main {
     display: flex;
     flex-direction: row;
     height: 100vh;
+    flex: 1;
 }
 
 .main-section {
     flex: 1;
-    // Usamos el mixin para el layout de columna
     @include mixins.flex-column-centered(60px); 
     gap: 20px;
 
     h4 {
         font-size: 20px;
         letter-spacing: 2px;
-        // Extendemos el estilo de texto en mayúsculas
         @extend %uppercase-text; 
     }
 
@@ -29,7 +65,6 @@ main {
 
 .second-main-section p {
     font-size: 16px;
-    // Extendemos el estilo de texto en mayúsculas
     @extend %uppercase-text;
 }
 
@@ -50,6 +85,7 @@ main {
   height: 60%;
 }
 
+
 header {
   position: absolute;
   top: 5vh;
@@ -58,6 +94,9 @@ header {
   z-index: 10;
 }
 .img-plato {
-    max-width: 500px; /* Ajusta este valor según lo necesites */
-    height: auto; /* Mantiene la proporción de la altura */
+    max-width: 500px;
+    height: auto; 
 }
+
+
+
